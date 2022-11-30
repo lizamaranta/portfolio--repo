@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./all.min.css" />
+  </head>
+  <body>
+    <nav>
+      <h2 id="logo">Liz Orduno</h2>
+      <ul class="navigation-items">
+        <li class="navigation-item"><a href="#about-me">About Me</a></li>
+        <li class="navigation-item"><a href="#projects">Projects</a></li>
+        <li class="navigation-item"><a href="#skills">Skills</a></li>
+        <li class="navigation-item"><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="about-me">
+        <div class="about-me-container">
+          <div class="about-me-text-container">
+            <h2>About Me</h2>
+            <p>
+              Hi! I'm Liz, currently a student at University of Texas Rio Grande Valley located in Edinburg,
+              Texas pursuing a Computer Science Degree.
+            </p>
+            <p>
+              Previously a project civil engineer offering 6 years of earth retention and soil stabilization construction
+              industry experience. Proven history of guiding project success by leveraging exceptional design, construction management
+              and estimating skills. Detailed, organized and hardworking, able to effectively communicate project specifications and
+              procedures with expertise in various design software.
+            </p>
+            <p>
+              In my free time I like to read about scientific developments,
+              mathematics, and computational mathematics. I also like to take my
+              chances of winning big.
+            </p>
+            <p>
+              Fun fact! I've been programing for
+              <span id="time-container">0</span> seconds!
+              <br>
+              <br>
+              <iframe src="https://open.spotify.com/embed/track/7DcJ6fEBb7BaKuYKTwiDxK?utm_source=generator&theme=0" width="65%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </p>
+          </div>
+          <img
+            src="personal.png"
+            alt="A Profile of Liz"
+            class="portrait"
+          />
+        </div>
+      </section>
+
+
+<!--//PROJECTS IMAGES & DESCRIPTIONS -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <details class="project">
+          <summary class="project-title">
+<!--//FIRST PROJECT: PYTHON -->
+            <h3>Python</h3>
+          </summary>
+<!--//FIRST IMAGE: PYTHON -->
+          <img id="myImg" src="phyon.png" alt="Image of the phyton work done in class" style="width:100%;max-width:500px">
+<!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+            <script>
+// Get the modal
+            var modal = document.getElementById("myModal");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("myImg");
+              var modalImg = document.getElementById("img01");
+              var captionText = document.getElementById("caption");
+              img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+              }
+// Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+// When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+              </script>
+<!--//FIRST DESCRIPTION TEXT: PYTHON -->
+          <p class="project-description">
+            <i>Riplit screenshot of learning to write on Python.
+            Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.</i>
+        </details>
+
+        <details class="project">
+          <summary class="project-title">
+<!--//SECOND PROJECT: LOGIC GATES & TRUTH TABLES-->
+            <h3>Logic Gates & Truth Tables</h3>
+          </summary>
+<!--//SECOND IMAGE: LOGIC -->
+          <img id="myImg1" src="circuits.png" alt="Logic Circuits Notes" style="width:100%;max-width:500px">
+<!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+            <script>
+// Get the modal
+          var modal = document.getElementById("myModal");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img = document.getElementById("myImg1");
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+// Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+// When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+</script>
+<!--//SECOND DESCRIPTION TEXT: LOGIC -->
+          <p class="project-description">
+            <i>The table used to represent the boolean expression of a logic gate function is commonly called a Truth Table. A logic gate truth table shows each possible input combination to the gate or circuit with the resultant output depending upon the combination of these input(s).</i>
+          </p>
+        </details>
+        <details class="project">
+          <summary class="project-title">
+            <h3>Python Hangman</h3>
+          </summary>
+          <video
+            controls
+            src="Hangman.mov"
+            width="650">
+            Sorry, your browser doesn't support embedded videos, but don't worry, you can
+          </video>
+          <p class="project-description">
+            <i>Hangman has been our most advanced game yet; Lists are values that can contain other values.
+            Methods are functions attached to a value.
+            Lists have an append() method. Strings have lower(), upper(), split(), startswith(), and endswith() methods.
+            The elif statement lets you add an “or else-if” clause to the middle of your if-else statements.</i>
+          </p>
+        </details>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div id="skills-container">
+          <img src="html-file.png" alt="HTML" width="30" height="40"></i>
+          <img src="css-file-format.png" alt="CSS" width="30" height="40"></i>
+          <img src="js.png" alt="JS" width="30" height="40"></i>
+          <img src="figma.png" alt="FIGMA" width="30" height="40"></i>
+          <img src="github.png" alt="GITHUB" width="30" height="40"></i>
+          <img src="chrome.png" alt="CHROME" width="30" height="40"></i>
+        </div>
+      </section>
+    </main>
+
+    <footer>Made with <span class="heart">♥</span> in Edinburg, TX.</footer>
+  </body>
+  <script>
+    const timeContainer = document.getElementById("time-container");
+    const BIRTH_DAY = "08-29-2022";
+    const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+    const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+    setInterval(() => {
+      const now = new Date();
+      const difference = Math.floor(
+        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+      );
+
+      timeContainer.innerText = intlNumberFormatter.format(difference);
+    }, 1000);
+  </script>
+</html>
